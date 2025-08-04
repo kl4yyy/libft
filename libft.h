@@ -1,17 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   isalpha.c                                             :+:      :+:    :+:   */
+/*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mnajem <mnajem@student.42.fr>              +#+  +:+       +#+        */
+/*   By: mnajem <mnajem@amman.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/03 12:45:40 by mnajem            #+#    #+#             */
-/*   Updated: 2025/08/03 12:45:42 by mnajem           ###   ########.fr       */
+/*   Created: 2025/08/04 18:50:30 by mnajem            #+#    #+#             */
+/*   Updated: 2025/08/04 18:56:28 by mnajem           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int isalpha(char c){
-    if (c >'A' && c < 'Z'|| c>'a'&&c<'z')
-        return(1);
-    else return(0);
-}
+#ifndef LIBFT_H
+#define LIBFT_H
+
+#include <unistd.h>
+#include <stdio.h>
+
+int	ft_strlen(char *c);
+int	ft_isprint(int c);
+int	ft_isdigit(int c);
+
+#endif

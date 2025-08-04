@@ -1,16 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   isalnum.c                                          :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mnajem <mnajem@student.42.fr>              +#+  +:+       +#+        */
+/*   By: mnajem <mnajem@amman.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/03 18:19:19 by mnajem            #+#    #+#             */
-/*   Updated: 2025/08/03 18:27:22 by mnajem           ###   ########.fr       */
+/*   Created: 2025/08/04 18:33:40 by mnajem            #+#    #+#             */
+/*   Updated: 2025/08/04 19:13:16 by mnajem           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int isalnum(int a){
-    if((a >'A' && a < 'Z'|| a>'a'&&a<'z')||(a >'0'&& a < '9')) return(1);
-    else return(0);
+#include "libft.h"
+
+size_t strlen(const char *s)
+{
+	size_t	len;
+
+	len = 0;
+	while (s[len] != '\0')
+	{
+		len++;
+	}
+	return (len);
 }
