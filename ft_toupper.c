@@ -1,16 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memsett.c                                       :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mnajem <mnajem@amman.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/04 21:46:07 by mnajem            #+#    #+#             */
-/*   Updated: 2025/08/05 15:19:46 by mnajem           ###   ########.fr       */
+/*   Created: 2025/08/05 15:23:26 by mnajem            #+#    #+#             */
+/*   Updated: 2025/08/05 16:40:10 by mnajem           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void    *memset(void *s, int c, size_t n)
-{
-    
+#include "libft.h"
+int toupper(int c){
+    if(c>='a'&&c<='z')return (c-=32);
+    else return(c);
+}
+int main(void){
+    char c = '9';
+    printf("%c\n",toupper(c));
 }
