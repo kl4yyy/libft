@@ -1,35 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mnajem <mnajem@amman.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/06 17:47:45 by mnajem            #+#    #+#             */
-/*   Updated: 2025/08/06 20:42:57 by mnajem           ###   ########.fr       */
+/*   Created: 2025/08/06 21:54:26 by mnajem            #+#    #+#             */
+/*   Updated: 2025/08/06 23:12:30 by mnajem           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+//unfinished
 #include "libft.h"
 
-char *ft_strrchr(const char *s, int c)
+char * strnstr(const char *big, const char *little, size_t len)
 {
-    int ds = ft_strlen(s);
-	
-	while (ds > 0)
+    size_t	i;
+	size_t	j;
+
+	i = 0;
+	if (*little == '\0')
+		return (big);
+	while (big[i] != '\0'&& i+j < len)
 	{
-		if (s[ds] == c)
+		j = 0;
+		if (big[i + j] == little[j])
 		{
-			return ((char *)(s + ds));
+			while ((big[i + j] != '\0') && (big[i + j] == little[j]))
+			{
+				j++;
+			}
 		}
-		ds--;
+		if (little[j] == '\0')
+			return ((char *)&big[i]);
+		i++;
 	}
 	return (NULL);
-}
-
-int	main(void)
-{
-	char *s = "hellmooohmwe";
-	int c = 'm';
-	printf("%s\n", ft_strrchr(s, c));
 }

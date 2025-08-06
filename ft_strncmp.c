@@ -1,35 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mnajem <mnajem@amman.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/06 17:47:45 by mnajem            #+#    #+#             */
-/*   Updated: 2025/08/06 20:42:57 by mnajem           ###   ########.fr       */
+/*   Created: 2025/08/06 20:36:51 by mnajem            #+#    #+#             */
+/*   Updated: 2025/08/06 22:15:18 by mnajem           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+//unfinished
 #include "libft.h"
 
-char *ft_strrchr(const char *s, int c)
+int ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-    int ds = ft_strlen(s);
-	
-	while (ds > 0)
-	{
-		if (s[ds] == c)
-		{
-			return ((char *)(s + ds));
-		}
-		ds--;
-	}
-	return (NULL);
-}
+    size_t i = 0;
 
-int	main(void)
-{
-	char *s = "hellmooohmwe";
-	int c = 'm';
-	printf("%s\n", ft_strrchr(s, c));
+    while (i < n && (s1[i] != '\0' || s2[i] != '\0'))
+    {
+        if (s1[i] != s2[i])
+           return ((unsigned char)s1[i] - (unsigned char)s2[i]);
+        i++;
+    }
+    return (0);
+}
+int main(void){
+    char *z = "hello";
+    char *i = "hello";
+    int m = 4;
+    printf("%d\n",ft_strncmp(z,i,m));
 }
