@@ -1,25 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mnajem <mnajem@amman.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/04 18:33:40 by mnajem            #+#    #+#             */
-/*   Updated: 2025/08/06 18:17:50 by mnajem           ###   ########.fr       */
+/*   Created: 2025/08/06 17:47:45 by mnajem            #+#    #+#             */
+/*   Updated: 2025/08/06 20:29:36 by mnajem           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *s)
-{
-	size_t	len;
-
-	len = 0;
-	while (s[len] != '\0')
+char *ft_strrchr(const char *s, int c){
+    int ds = 0;
+	while (s[ds] != '\0')
 	{
-		len++;
+		ds++;
 	}
-	return (len);
+	while (ds > 0)
+	{
+		if (s[ds] == c)
+		{
+			
+			return ((char *)(s+ds));
+		}
+			ds--;
+	}
+	return (NULL);
+}
+int	main(void)
+{
+	char *s = "hellmooohmwe";
+	int c = 109;
+	printf("%s\n", ft_strrchr(s, c));
 }
