@@ -6,13 +6,13 @@
 /*   By: mnajem <mnajem@amman.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/05 17:50:47 by mnajem            #+#    #+#             */
-/*   Updated: 2025/08/05 18:27:02 by mnajem           ###   ########.fr       */
+/*   Updated: 2025/08/06 14:59:14 by mnajem           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t strlcpy(char *dst, const char *src, size_t size){
+size_t ft_strlcpy(char *dst, const char *src, size_t size){
     int i;
 	int	y;
 	int	destlng;
