@@ -6,16 +6,16 @@
 /*   By: mnajem <mnajem@amman.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/05 15:23:26 by mnajem            #+#    #+#             */
-/*   Updated: 2025/08/06 15:00:05 by mnajem           ###   ########.fr       */
+/*   Updated: 2025/08/06 15:06:50 by mnajem           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-int ft_toupper(int c){
-    if(c>='a'&&c<='z')return (c-=32);
-    else return(c);
-}
-int main(void){
-    char c = '9';
-    printf("%c\n",toupper(c));
+
+int	ft_toupper(int c)
+{
+	if (c >= 'a' && c <= 'z')
+		return (c -= 32);
+	else
+		return (c);
 }
