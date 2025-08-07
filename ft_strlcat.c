@@ -6,10 +6,11 @@
 /*   By: mnajem <mnajem@amman.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/06 15:09:44 by mnajem            #+#    #+#             */
-/*   Updated: 2025/08/06 18:10:34 by mnajem           ###   ########.fr       */
+/*   Updated: 2025/08/07 15:19:02 by mnajem           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+//unfinished
 #include "libft.h"
 size_t ft_strlcat(char *dst, const char *src, size_t size){
     int dlen=0;

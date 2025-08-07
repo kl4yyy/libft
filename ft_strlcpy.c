@@ -1,37 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mnajem <mnajem@amman.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/05 17:50:47 by mnajem            #+#    #+#             */
-/*   Updated: 2025/08/06 14:59:14 by mnajem           ###   ########.fr       */
+/*   Updated: 2025/08/07 15:16:56 by mnajem           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
-	int i;
-	int y;
-	int destlng;
+	size_t i;
+	size_t srclen;
 
 	i = 0;
-	destlng = 0;
-	while (dst[destlng] != '\0')
+	srclen = 0;
+	while (src[srclen] != '\0')
+		srclen++;
+	if (size == 0)
+		return (srclen);
+	while (src[i] != '\0' && i < size - 1)
 	{
-		destlng++;
-	}
-	y = (size - destlng - 1);
-	while ((src[i] != '\0' && y))
-	{
-		dst[destlng] = src[y];
-		destlng++;
-		y--;
+		dst[i] = src[i];
 		i++;
 	}
-	dst[destlng] = '\0';
-	return (destlng);
+	dst[i] = '\0';
+
+	return (srclen);
 }
