@@ -10,18 +10,18 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-//unfinished
+// unfinished
 #include "libft.h"
 
-char * strnstr(const char *big, const char *little, size_t len)
+char	*strnstr(const char *big, const char *little, size_t len)
 {
-    size_t	i;
+	size_t	i;
 	size_t	j;
 
 	i = 0;
 	if (*little == '\0')
 		return (big);
-	while (big[i] != '\0'&& i+j < len)
+	while (big[i] != '\0' && i + j < len)
 	{
 		j = 0;
 		if (big[i + j] == little[j])

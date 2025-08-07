@@ -1,34 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mnajem <mnajem@amman.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/07 15:20:22 by mnajem            #+#    #+#             */
-/*   Updated: 2025/08/07 18:51:52 by mnajem           ###   ########.fr       */
+/*   Created: 2025/08/07 21:04:18 by mnajem            #+#    #+#             */
+/*   Updated: 2025/08/07 21:28:53 by mnajem           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-void	*ft_memcpy(void *dest, const void *src, size_t n)
+int ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	unsigned char	*ptr;
-    unsigned char	*sc = (unsigned char *)src;
-	ptr = (unsigned char *)dest;
-    size_t i = 0;
-    while(i<n){
-        ptr[i] = sc[i];
-        i++;
+    unsigned const char * s = s1;
+    unsigned const char * ss = s2;
+    while(n--)
+    {
+        if (*s != *ss)
+            return (*s - *ss);
+        s++;
+        ss++;
     }
-    return(dest);
+    return (0);
 }
-
 // int main(void){
-//     char dest[100];
-//     char *h = "hello";
-//     int sz = 3;
-//     dest[sz] = '\0';
-//     printf("%s\n",(char *)ft_memcpy(dest,h,sz));
+//     char * i = "hello";
+//     char * j = "hr";
+//     printf("%d\n",memcmp(i,j,3));
 // }
