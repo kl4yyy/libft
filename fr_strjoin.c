@@ -24,24 +24,15 @@ char *ft_strjoin(char const *s1, char const *s2)
         j++;
     }
     ns[n] = '\0';
-    return ns;
+    return (ns);
 }
 
 // int main(void)
 // {
 //     char *s1 = "Hello, ";
 //     char *s2 = "World!";
-//     char *joined = ft_strjoin(s1, s2);
-
-//     if (joined == NULL)
-//     {
-//         printf("ft_strjoin returned NULL\n");
-//         return 1;
-//     }
-
-//     printf("%s\n", joined);
-
-//     free(joined);
-//     return 0;
+//     char *new = ft_strjoin(s1, s2);
+//     printf("%s\n", new);
+//     free(new);
 // }
 
