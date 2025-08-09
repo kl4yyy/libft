@@ -1,6 +1,8 @@
+//check for overflow maybe?
 void *calloc(size_t nmemb, size_t size)
 {
-    size_t fsz = nmemb * size + 1;
+    if (nmemb == 0||size == 0) return malloc(1);
+    size_t fsz = nmemb * size;
     void *p = malloc(fsz);
     if (!p) return NULL;
 
