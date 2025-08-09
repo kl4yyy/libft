@@ -4,6 +4,7 @@ char *strdup(const char *s)
 {
     size_t i = 0;
     char *dub;
+    //replace with strlen
     while(s[i] != '\0') i++;
 
     dub = malloc (i+1);
