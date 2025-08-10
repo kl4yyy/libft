@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-char *strdup(const char *s)
+char *ft_strdup(const char *s)
 {
     size_t i = 0;
     char *dub;
@@ -18,9 +18,9 @@ char *strdup(const char *s)
     return (dub);
 }
 
-int main(void){
-    char *s = "hello";
-    char *fun = strdup(s);
-    printf("%s\n",fun);
-    free(fun);
-}
+// int main(void){
+//     char *s = "hello";
+//     char *fun = ft_strdup(s);
+//     printf("%s\n",fun);
+//     free(fun);
+// }
