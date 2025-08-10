@@ -6,7 +6,7 @@
 /*   By: mnajem <mnajem@amman.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/06 20:36:51 by mnajem            #+#    #+#             */
-/*   Updated: 2025/08/06 22:15:18 by mnajem           ###   ########.fr       */
+/*   Updated: 2025/08/10 22:18:00 by mnajem           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (0);
 }
+
 int	main(void)
 {
 	char	*z;

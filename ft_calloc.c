@@ -1,11 +1,28 @@
-//check for overflow maybe?
-void *calloc(size_t nmemb, size_t size)
-{
-    if (nmemb == 0||size == 0) return malloc(1);
-    size_t fsz = nmemb * size;
-    void *p = malloc(fsz);
-    if (!p) return NULL;
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mnajem <mnajem@amman.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/08/10 22:12:38 by mnajem            #+#    #+#             */
+/*   Updated: 2025/08/10 22:12:39 by mnajem           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-    ft_bezero(p, fsz);
-    return (p);
+#include "libft.h"
+
+void	*calloc(size_t nmemb, size_t size)
+{
+	size_t	fsz;
+	void	*p;
+
+	if (nmemb == 0 || size == 0)
+		return (malloc(1));
+	fsz = nmemb * size;
+	p = malloc(fsz);
+	if (!p)
+		return (NULL);
+	ft_bezero(p, fsz);
+	return (p);
 }

@@ -1,30 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mnajem <mnajem@amman.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/05 16:41:14 by mnajem            #+#    #+#             */
-/*   Updated: 2025/08/10 22:10:33 by mnajem           ###   ########.fr       */
+/*   Created: 2025/08/10 20:56:27 by mnajem            #+#    #+#             */
+/*   Updated: 2025/08/10 21:44:53 by mnajem           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*strchr(const char *s, int c)
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	while (*s != '\0')
+	unsigned int	i;
+	unsigned int	j;
+	char			*p;
+
+	j = 0;
+	if (!s || !f)
+		return (NULL);
+	j = ft_strlen(s);
+	p = malloc(j + 1);
+	if (!p)
+		return (NULL);
+	i = 0;
+	while (i < j)
 	{
-		if (*s == (char)c)
-			return ((char *)s);
-		s++;
+		p[i] = f(i, s[i]);
+		i++;
 	}
-	return (NULL);
+	p[i] = '\0';
+	return (p);
 }
-// int	main(void)
-// {
-// 	char *s = "hellmooohmwe";
-// 	int c = 109;
-// 	printf("%s\n", strchr(s, c));
-// }

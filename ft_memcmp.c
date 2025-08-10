@@ -11,18 +11,22 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-int ft_memcmp(const void *s1, const void *s2, size_t n)
+
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-    unsigned const char * s = s1;
-    unsigned const char * ss = s2;
-    while(n--)
-    {
-        if (*s != *ss)
-            return (*s - *ss);
-        s++;
-        ss++;
-    }
-    return (0);
+	unsigned const char	*s;
+	unsigned const char	*ss;
+
+	s = s1;
+	ss = s2;
+	while (n--)
+	{
+		if (*s != *ss)
+			return (*s - *ss);
+		s++;
+		ss++;
+	}
+	return (0);
 }
 // int main(void){
 //     char * i = "hello";

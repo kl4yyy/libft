@@ -39,14 +39,14 @@ char	*ft_itoa(int n)
 
 	len = 0;
 	if (n == 0)
-        return (ft_strdup("0"));
+		return (ft_strdup("0"));
 	else if (n == -2147483648)
 		return (ft_strdup("-2147483648"));
 	len = count_len(n);
 	str = malloc(len + 1);
 	if (!str)
 		return (NULL);
-    str[len] = '\0';
+	str[len] = '\0';
 	len--;
 	if (n < 0)
 	{

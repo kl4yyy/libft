@@ -6,7 +6,7 @@
 /*   By: mnajem <mnajem@amman.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/06 15:09:44 by mnajem            #+#    #+#             */
-/*   Updated: 2025/08/07 15:19:02 by mnajem           ###   ########.fr       */
+/*   Updated: 2025/08/10 22:10:44 by mnajem           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,10 +39,10 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	}
 	return (j);
 }
-int	main(void)
-{
-	char dst[20] = "alo";
-	char src[20] = "yaali";
-	int size = 3;
-	printf("%zu\n", ft_strlcat(dst, src, size));
-}
+// int	main(void)
+// {
+// 	char dst[20] = "alo";
+// 	char src[20] = "yaali";
+// 	int size = 3;
+// 	printf("%zu\n", ft_strlcat(dst, src, size));
+// }
