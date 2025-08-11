@@ -6,7 +6,7 @@
 /*   By: mnajem <mnajem@amman.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/04 18:50:30 by mnajem            #+#    #+#             */
-/*   Updated: 2025/08/10 22:30:56 by mnajem           ###   ########.fr       */
+/*   Updated: 2025/08/11 17:06:56 by mnajem           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,5 +42,9 @@ void    ft_putstr_fd(char *s, int fd);
 void    ft_putendl_fd(char *s, int fd);
 void    ft_putnbr_fd(int n, int fd);
 char    *ft_strmapi(char const *s, char (*f)(unsigned int, char));
+char	*ft_strjoin(char const *s1, char const *s2);
+char **ft_split(char const *s, char c);
+void	*ft_calloc(size_t nmemb, size_t size);
+
 
 #endif
