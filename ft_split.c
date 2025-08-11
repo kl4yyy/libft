@@ -6,13 +6,13 @@
 /*   By: mnajem <mnajem@amman.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/11 15:33:51 by mnajem            #+#    #+#             */
-/*   Updated: 2025/08/11 21:58:32 by mnajem           ###   ########.fr       */
+/*   Updated: 2025/08/11 22:43:02 by mnajem           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int fun_count_word(char const *s, char c)
+static int word_count(char const *s, char c)
 {
     int count = 0;
 
@@ -29,14 +29,22 @@ static int fun_count_word(char const *s, char c)
     }
     return count;
 }
-
+static int word_len (char const *s,char c){
+    int i = 0;
+    while(s[i]){
+        if(s[i]==c)
+        return i;
+        i++;
+    }
+}
+ 
 char **ft_split(char const *s, char c)
 {
     char  **arr;
     int     i;
     if (!s) 
         return NULL;
-    arr = malloc((fun_count_word(s, c) + 1) * sizeof(char *));
+    arr = malloc((word_count(s, c) + 1) * sizeof(char *));
     if (!arr)
         return NULL;
     return (arr);
