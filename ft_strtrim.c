@@ -6,7 +6,7 @@
 /*   By: mnajem <mnajem@amman.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/10 22:13:04 by mnajem            #+#    #+#             */
-/*   Updated: 2025/08/10 22:20:20 by mnajem           ###   ########.fr       */
+/*   Updated: 2025/08/13 00:19:35 by mnajem           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,9 @@ char	*ft_strtrim(const char *s1, const char *set)
 	size_t	start;
 	size_t	end;
 	char	*p;
+	size_t	i;
+	size_t	j;
 
-	size_t i, j;
 	start = 0;
 	if (!s1 || !set)
 		return (NULL);
@@ -40,15 +41,15 @@ char	*ft_strtrim(const char *s1, const char *set)
 	return (p);
 }
 
-int	main(void)
-{
-	char	*s;
-	char	*set;
-	char	*p;
+// int	main(void)
+// {
+// 	char	*s;
+// 	char	*set;
+// 	char	*p;
 
-	s = "helloeo";
-	set = "el";
-	p = ft_strtrim(s, set);
-	printf("%s\n", p); // ho
-	free(p);
-}
+// 	s = "helloeo";
+// 	set = "el";
+// 	p = ft_strtrim(s, set);
+// 	printf("%s\n", p); // ho
+// 	free(p);
+// }

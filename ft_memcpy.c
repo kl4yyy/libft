@@ -6,7 +6,7 @@
 /*   By: mnajem <mnajem@amman.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/07 15:20:22 by mnajem            #+#    #+#             */
-/*   Updated: 2025/08/07 18:51:52 by mnajem           ###   ########.fr       */
+/*   Updated: 2025/08/12 21:25:39 by mnajem           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	unsigned char	*sc;
 	size_t			i;
 
+	if (!dest && !src)
+		return (NULL);
 	sc = (unsigned char *)src;
 	ptr = (unsigned char *)dest;
 	i = 0;

@@ -6,7 +6,7 @@
 /*   By: mnajem <mnajem@amman.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/10 22:13:50 by mnajem            #+#    #+#             */
-/*   Updated: 2025/08/10 22:13:51 by mnajem           ###   ########.fr       */
+/*   Updated: 2025/08/13 04:27:05 by mnajem           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	sub[sln] = '\0';
 	return (sub);
 }
+
 // int main(void)
 // {
 //     size_t len = 10;

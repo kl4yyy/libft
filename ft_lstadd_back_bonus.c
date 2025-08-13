@@ -1,38 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_lstadd_back_bonus.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mnajem <mnajem@amman.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/07 21:29:18 by mnajem            #+#    #+#             */
-/*   Updated: 2025/08/12 21:17:25 by mnajem           ###   ########.fr       */
+/*   Created: 2025/08/13 06:47:29 by mnajem            #+#    #+#             */
+/*   Updated: 2025/08/13 06:57:24 by mnajem           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+// #include "libft.h"
 
-int	ft_atoi(const char *nptr)
-{
-	int	sgn;
-	int	res;
-	int	i;
-
-	sgn = 1;
-	res = 0;
-	i = 0;
-	while (nptr[i] == ' ' || (nptr[i] >= 9 && nptr[i] <= 13))
-		i++;
-	if (nptr[i] == '-' || nptr[i] == '+')
-	{
-		if (nptr[i] == '-')
-			sgn = -1;
-		i++;
-	}
-	while (nptr[i] >= '0' && nptr[i] <= '9')
-	{
-		res = res * 10 + (nptr[i] - '0');
-		i++;
-	}
-	return (res * sgn);
-}
+// void    ft_lstadd_back(t_list **lst, t_list *new)
+// {
+    
+// }

@@ -1,48 +1,62 @@
 CC = cc
 
-CFLAGS = -Wall -Wextra -Werror -I./include
-# -I : find the header in include.
+CFLAGS = -Wall -Wextra -Werror
 
-SRCS = $(shell cat srcs_file.txt)
+SRCS =	ft_atoi.c \
+	ft_calloc.c \
+	ft_bzero.c \
+	ft_isalnum.c \
+	ft_isalpha.c \
+	ft_isascii.c \
+	ft_isdigit.c \
+	ft_isprint.c \
+	ft_memcmp.c \
+	ft_memcpy.c \
+	ft_memmove.c \
+	ft_memset.c \
+	ft_putchar_fd.c \
+	ft_putendl_fd.c \
+	ft_putnbr_fd.c \
+	ft_putstr_fd.c \
+	ft_strdup.c \
+	ft_striteri.c \
+	ft_strlcat.c \
+	ft_strlcpy.c \
+	ft_strlen.c \
+	ft_strmapi.c \
+	ft_strncmp.c \
+	ft_substr.c \
+	ft_tolower.c \
+	ft_toupper.c \
+	ft_strchr.c \
+	ft_strrchr.c \
+	ft_memchr.c \
+	ft_strjoin.c \
+	ft_split.c
 
-OBJ_DIR = objs
-# directory for objects file.
 
-OBJS = $(SRCS:srcs/%.c=$(OBJ_DIR)/%.o)
-# convert .c files to .o files to the path OBJ_DIR.
+BONUS_SRC = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c \
+	ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c
+
+
+OBJS = $(SRCS:.c=.o)
+BONUS_OBJ = $(BONUS_SRC:.c=.o)
 
 NAME = libft.a
 
-GREEN = \033[0;32m
-YELLOW = \033[0;33m
-BLUE = \033[0;34m
-RED = \033[0;31m
-CYAN = \033[0;36m
-RESET = \033[0m
-
-START_MSG = "$(CYAN)\n███████╗████████╗     ██████╗ ██╗   ██╗\n██╔════╝╚══██╔══╝    ██╔═══██╗██║   ██║\n███████╗   ██║       ██║   ██║██║   ██║\n╚════██║   ██║       ██║▄▄ ██║██║   ██║\n███████║   ██║       ╚██████╔╝╚██████╔╝\n╚══════╝   ╚═╝        ╚══▀▀═╝  ╚═════╝ \n\nStarting Build...$(RESET)\n"
-
-END_MSG = "$(GREEN)\n███████╗██╗   ██╗██████╗ ███████╗███████╗\n██╔════╝██║   ██║██╔══██╗██╔════╝██╔════╝\n███████╗██║   ██║██████╔╝█████╗  █████╗  \n╚════██║██║   ██║██╔═══╝ ██╔══╝  ██╔══╝  \n███████║╚██████╔╝██║     ███████╗███████╗\n╚══════╝ ╚═════╝ ╚═╝     ╚══════╝╚══════╝\n\nBuild Completed!$(RESET)\n"
-
-all: $(NAME)
+all:$(NAME)
 
 $(NAME): $(OBJS)
-	@echo $(START_MSG)
-	@ar rcs $(NAME) $(OBJS)
-	@echo $(END_MSG)
+	ar rcs $(NAME) $(OBJS)
 
-$(OBJ_DIR)/%.o: srcs/%.c
-	@mkdir -p $(OBJ_DIR)
-	@echo "$(YELLOW)Compiling $<...$(RESET)"
-	@$(CC) $(CFLAGS) -c $< -o $@
+bonus: $(OBJ) $(BONUS_OBJ)
+	$(AR) $(NAME) $(OBJ) $(BONUS_OBJ)
 
 clean:
-	@rm -rf $(OBJ_DIR)
-	@echo "$(BLUE)\n🧹 Cleaned object files.$(RESET)\n"
+	rm -f $(OBJ) $(BONUS_OBJ)
 
 fclean: clean
-	@rm -f $(NAME)
-	@echo "$(RED)\n🗑️ Fully cleaned project.$(RESET)\n"
+	rm -f $(NAME)
 
 re: fclean all
 

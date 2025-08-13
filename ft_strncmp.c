@@ -6,11 +6,10 @@
 /*   By: mnajem <mnajem@amman.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/06 20:36:51 by mnajem            #+#    #+#             */
-/*   Updated: 2025/08/10 22:18:00 by mnajem           ###   ########.fr       */
+/*   Updated: 2025/08/12 19:47:11 by mnajem           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// unfinished
 #include "libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
@@ -27,14 +26,14 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	return (0);
 }
 
-int	main(void)
-{
-	char	*z;
-	char	*i;
-	int		m;
+// int	main(void)
+// {
+// 	char	*z;
+// 	char	*i;
+// 	int		m;
 
-	z = "hello";
-	i = "hello";
-	m = 4;
-	printf("%d\n", ft_strncmp(z, i, m));
-}
+// 	z = "hello";
+// 	i = "hello";
+// 	m = 4;
+// 	printf("%d\n", ft_strncmp(z, i, m));
+// }

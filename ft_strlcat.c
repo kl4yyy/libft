@@ -6,7 +6,7 @@
 /*   By: mnajem <mnajem@amman.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/06 15:09:44 by mnajem            #+#    #+#             */
-/*   Updated: 2025/08/10 22:10:44 by mnajem           ###   ########.fr       */
+/*   Updated: 2025/08/12 21:07:26 by mnajem           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,30 +15,27 @@
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
-	int	dlen;
-	int	i;
-	int	j;
+	size_t	dst_len;
+	size_t	src_len;
+	size_t	i;
 
-	dlen = 0;
-	while (dst[dlen] != '\0')
+	dst_len = ft_strlen(dst);
+	src_len = ft_strlen(src);
+	if (size <= dst_len)
 	{
-		dlen++;
+		return (size + src_len);
 	}
-	i = 0;
-	while (size > 0)
+	i = dst_len;
+	while (i < size - 1 && *src != '\0')
 	{
-		dst[dlen] = src[i];
+		dst[i] = *src;
 		i++;
-		size--;
-		dlen++;
+		src++;
 	}
-	j = 0;
-	while (dst[j] != '\0')
-	{
-		j++;
-	}
-	return (j);
+	dst[i] = '\0';
+	return (dst_len + src_len);
 }
+
 // int	main(void)
 // {
 // 	char dst[20] = "alo";

@@ -6,7 +6,7 @@
 /*   By: mnajem <mnajem@amman.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/05 17:50:47 by mnajem            #+#    #+#             */
-/*   Updated: 2025/08/10 23:06:35 by mnajem           ###   ########.fr       */
+/*   Updated: 2025/08/12 20:19:36 by mnajem           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 		return (srclen);
 	while (src[i] != '\0' && i < size - 1)
 	{
-		&dst[i] = src[i];
+		dst[i] = src[i];
 		i++;
 	}
 	dst[i] = '\0';
