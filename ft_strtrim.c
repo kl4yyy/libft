@@ -6,7 +6,7 @@
 /*   By: mnajem <mnajem@amman.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/10 22:13:04 by mnajem            #+#    #+#             */
-/*   Updated: 2025/08/13 00:19:35 by mnajem           ###   ########.fr       */
+/*   Updated: 2025/08/14 22:48:31 by mnajem           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,12 +23,12 @@ char	*ft_strtrim(const char *s1, const char *set)
 	start = 0;
 	if (!s1 || !set)
 		return (NULL);
-	while (s1[start] && strchr(set, s1[start]))
+	while (s1[start] && ft_strchr(set, s1[start]))
 		start++;
 	end = start;
 	while (s1[end])
 		end++;
-	while (end > start && strchr(set, s1[end - 1]))
+	while (end > start && ft_strchr(set, s1[end - 1]))
 		end--;
 	p = malloc(end - start + 1);
 	if (!p)
