@@ -6,10 +6,11 @@
 /*   By: mnajem <mnajem@amman.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/06 17:47:45 by mnajem            #+#    #+#             */
-/*   Updated: 2025/08/13 03:35:01 by mnajem           ###   ########.fr       */
+/*   Updated: 2025/08/18 19:43:52 by mnajem           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+//check the +ds
 #include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)

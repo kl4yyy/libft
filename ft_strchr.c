@@ -6,10 +6,11 @@
 /*   By: mnajem <mnajem@amman.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/05 16:41:14 by mnajem            #+#    #+#             */
-/*   Updated: 2025/08/12 21:30:42 by mnajem           ###   ########.fr       */
+/*   Updated: 2025/08/18 19:41:00 by mnajem           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+//check the casting
 #include "libft.h"
 
 char	*ft_strchr(const char *s, int c)

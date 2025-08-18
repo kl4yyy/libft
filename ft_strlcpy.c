@@ -6,10 +6,11 @@
 /*   By: mnajem <mnajem@amman.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/05 17:50:47 by mnajem            #+#    #+#             */
-/*   Updated: 2025/08/12 20:19:36 by mnajem           ###   ########.fr       */
+/*   Updated: 2025/08/18 21:02:44 by mnajem           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+//check the condition
 #include "libft.h"
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)

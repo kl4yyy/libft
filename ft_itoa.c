@@ -6,10 +6,11 @@
 /*   By: mnajem <mnajem@amman.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/10 19:46:09 by mnajem            #+#    #+#             */
-/*   Updated: 2025/08/15 02:29:48 by mnajem           ###   ########.fr       */
+/*   Updated: 2025/08/18 22:13:36 by mnajem           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+//
 #include "libft.h"
 
 static int	count_len(long n)
@@ -28,7 +29,6 @@ static int	count_len(long n)
 }
 
 char	*ft_itoa(int n)
-
 {
 	long	x;
 	int		len;
@@ -55,10 +55,3 @@ char	*ft_itoa(int n)
 	}
 	return (str);
 }
-// int	main(void)
-// {
-// 	printf("%s\n", ft_itoa(3704));        // "3704"
-// 	printf("%s\n", ft_itoa(-123));        // "-123"
-// 	printf("%s\n", ft_itoa(0));           // "0"
-// 	printf("%s\n", ft_itoa(-2147483648)); // "-2147483648"
-// }

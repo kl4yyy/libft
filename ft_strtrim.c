@@ -6,10 +6,11 @@
 /*   By: mnajem <mnajem@amman.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/10 22:13:04 by mnajem            #+#    #+#             */
-/*   Updated: 2025/08/14 22:48:31 by mnajem           ###   ########.fr       */
+/*   Updated: 2025/08/18 19:43:41 by mnajem           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+//check the logic
 #include "libft.h"
 
 char	*ft_strtrim(const char *s1, const char *set)

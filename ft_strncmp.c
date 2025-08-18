@@ -6,10 +6,11 @@
 /*   By: mnajem <mnajem@amman.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/06 20:36:51 by mnajem            #+#    #+#             */
-/*   Updated: 2025/08/12 19:47:11 by mnajem           ###   ########.fr       */
+/*   Updated: 2025/08/18 19:45:25 by mnajem           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+//check the codition
 #include "libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)

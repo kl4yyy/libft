@@ -6,18 +6,14 @@
 /*   By: mnajem <mnajem@amman.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/10 17:46:27 by mnajem            #+#    #+#             */
-/*   Updated: 2025/08/10 17:53:37 by mnajem           ###   ########.fr       */
+/*   Updated: 2025/08/18 21:56:15 by mnajem           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+//remeber the address reasoning
 #include "libft.h"
 
 void	ft_putchar_fd(char c, int fd)
 {
 	write(fd, &c, 1);
 }
-// int main(void){
-//     int fd = 1;
-//     char c = 'c';
-//     ft_putchar_fd(c,fd);
-// }

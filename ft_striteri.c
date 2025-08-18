@@ -6,10 +6,11 @@
 /*   By: mnajem <mnajem@amman.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/10 22:17:34 by mnajem            #+#    #+#             */
-/*   Updated: 2025/08/10 22:17:37 by mnajem           ###   ########.fr       */
+/*   Updated: 2025/08/18 19:46:43 by mnajem           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+//check the function making
 #include "libft.h"
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))

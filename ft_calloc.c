@@ -6,7 +6,7 @@
 /*   By: mnajem <mnajem@amman.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/10 22:12:38 by mnajem            #+#    #+#             */
-/*   Updated: 2025/08/12 20:14:23 by mnajem           ###   ########.fr       */
+/*   Updated: 2025/08/18 21:54:31 by mnajem           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,11 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	void	*p;
 
 	if (nmemb == 0 || size == 0)
-		return (malloc(1));
+	{
+		p = malloc(1);
+		if (!p)
+			return (NULL);
+	}
 	fsz = nmemb * size;
 	p = malloc(fsz);
 	if (!p)

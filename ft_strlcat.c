@@ -6,11 +6,11 @@
 /*   By: mnajem <mnajem@amman.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/06 15:09:44 by mnajem            #+#    #+#             */
-/*   Updated: 2025/08/12 21:07:26 by mnajem           ###   ########.fr       */
+/*   Updated: 2025/08/18 21:02:29 by mnajem           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// unfinished
+// check the condition
 #include "libft.h"
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)

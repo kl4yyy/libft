@@ -6,11 +6,11 @@
 /*   By: mnajem <mnajem@amman.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/06 21:54:26 by mnajem            #+#    #+#             */
-/*   Updated: 2025/08/15 02:31:24 by mnajem           ###   ########.fr       */
+/*   Updated: 2025/08/18 21:40:54 by mnajem           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// unfinished
+// check conditions
 #include "libft.h"
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)

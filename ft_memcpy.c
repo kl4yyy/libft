@@ -6,7 +6,7 @@
 /*   By: mnajem <mnajem@amman.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/07 15:20:22 by mnajem            #+#    #+#             */
-/*   Updated: 2025/08/12 21:25:39 by mnajem           ###   ########.fr       */
+/*   Updated: 2025/08/18 22:08:59 by mnajem           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,11 +30,3 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-
-// int main(void){
-//     char dest[100];
-//     char *h = "hello";
-//     int sz = 3;
-//     dest[sz] = '\0';
-//     printf("%s\n",(char *)ft_memcpy(dest,h,sz));
-// }

@@ -6,7 +6,7 @@
 /*   By: mnajem <mnajem@amman.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/10 17:56:08 by mnajem            #+#    #+#             */
-/*   Updated: 2025/08/12 19:48:20 by mnajem           ###   ########.fr       */
+/*   Updated: 2025/08/18 21:56:02 by mnajem           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,13 +35,3 @@ void	ft_putnbr_fd(int n, int fd)
 	else
 		ft_putchar_fd(n + '0', fd);
 }
-
-// int	main(void)
-// {
-// 	int	i;
-// 	int	fd;
-
-// 	i = 100000;
-// 	fd = 1;
-// 	ft_putnbr_fd(INT_MIN, fd);
-// }
