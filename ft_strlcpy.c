@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-//check the condition
+
 #include "libft.h"
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
@@ -19,9 +19,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	size_t	srclen;
 
 	i = 0;
-	srclen = 0;
-	while (src[srclen] != '\0')
-		srclen++;
+	srclen = ft_strlen(src);
 	if (size == 0)
 		return (srclen);
 	while (src[i] != '\0' && i < size - 1)
