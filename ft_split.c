@@ -10,9 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-// understand
 #include "libft.h"
-#include <stdlib.h>
 
 static int	countword(const char *s, char c)
 {
