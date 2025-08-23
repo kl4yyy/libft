@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-// check the casting
 #include "libft.h"
 
 char	*ft_strchr(const char *s, int c)
@@ -28,6 +27,6 @@ char	*ft_strchr(const char *s, int c)
 // int	main(void)
 // {
 // 	char *s = "hellmooohmwe";
-// 	int c = 109;
+// 	int c = 'm';
 // 	printf("%s\n", strchr(s, c));
 // }
