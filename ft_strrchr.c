@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-//check the +ds
+// check the +ds
 #include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)

@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-//check the logic
 #include "libft.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
@@ -25,7 +24,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	slen = ft_strlen(s + start);
 	if (len > slen)
 		len = slen;
-	sub =  malloc (len + 1);
+	sub = malloc(len + 1);
 	if (sub == NULL)
 		return (NULL);
 	ft_strlcpy(sub, s + start, len + 1);
@@ -33,12 +32,12 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	return (sub);
 }
 
-int main(void)
-{
-    size_t len = 1;
-    char *s = "hello";
-    int start = 2;
-    char *fun = ft_substr(s,start,len);
-    printf("%s\n",fun);
-    free(fun);
-}
+// int main(void)
+// {
+//     size_t len = 10;
+//     char *s = "hello";
+//     int start = 2;
+//     char *fun = ft_substr(s,start,len);
+//     printf("%s\n",fun);
+//     free(fun);
+// }

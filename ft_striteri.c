@@ -6,7 +6,7 @@
 /*   By: mnajem <mnajem@amman.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/10 22:17:34 by mnajem            #+#    #+#             */
-/*   Updated: 2025/08/18 19:46:43 by mnajem           ###   ########.fr       */
+/*   Updated: 2025/08/23 01:06:26 by mnajem           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
 	unsigned int	i;
 
-	if (*s == '\0')
+	if (!s || !f)
 		return ;
 	i = 0;
 	while (s[i] != '\0')
@@ -25,4 +25,3 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 		i++;
 	}
 }
-

@@ -6,7 +6,7 @@
 /*   By: mnajem <mnajem@amman.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/10 17:55:19 by mnajem            #+#    #+#             */
-/*   Updated: 2025/08/18 19:39:20 by mnajem           ###   ########.fr       */
+/*   Updated: 2025/08/21 22:45:46 by mnajem           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,8 @@
 
 void	ft_putendl_fd(char *s, int fd)
 {
-	if (s)
-		ft_putstr_fd(s, fd);
+	if (!s)
+		return ;
+	ft_putstr_fd(s, fd);
 	write(fd, "\n", 1);
 }
